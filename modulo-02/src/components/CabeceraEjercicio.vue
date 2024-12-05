@@ -2,6 +2,7 @@
     <div class="cabecera-ejercicio">
       <!-- Slot por defecto (titulo para el ejercicio) -->
       <h1><slot></slot></h1>
+      <!-- se pintaran en la app como se hayan nombrado aqui no como luego se pongan en la app-->
   
       <!-- Slot para la descripción del ejercicio,(app.vue=#descripcion)-->
       <p><slot name="descripcion"></slot></p>
@@ -9,10 +10,9 @@
   </template>
   
   <script>
-  import { defineComponent } from 'vue';
-  
-  export default defineComponent({
-    name: 'CabeceraEjercicio',
+  import { defineComponent } from 'vue'; // defineComponent se usa en vez d setup para crear el componente y setup para la logica
+   export default defineComponent({    
+    name: 'CabeceraEjercicio',  
   });
   </script>
   

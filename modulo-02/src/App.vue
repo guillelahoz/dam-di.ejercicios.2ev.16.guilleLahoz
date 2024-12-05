@@ -16,18 +16,27 @@
 
       <!-- Descripción del ejercicio 2 (igual que el 1) -->
       <template #descripcion>
-        Uso de componente con slots con informacion estatica
-      </template>
+      Eventos de ciclo de vida   <!-- los template son para los slots solo-->
+      </template>     
+  
+      <Ej02 />
+          
     </CabeceraEjercicio>
   </div>
 </template>
 
 <script>
 import CabeceraEjercicio from './components/CabeceraEjercicio.vue';
+import Ej02 from './components/Ej02.vue';
+
+
 
 export default {
   components: {
-    CabeceraEjercicio
+    CabeceraEjercicio,
+    Ej02,
   }
 };
+
+
 </script>
